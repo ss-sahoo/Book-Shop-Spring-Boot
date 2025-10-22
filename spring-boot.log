@@ -1,0 +1,423 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.library:library-management-system >----------------
+[INFO] Building Library Management System 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.0:run (default-cli) > test-compile @ library-management-system >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ library-management-system ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ library-management-system ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ library-management-system ---
+[INFO] skip non existing resourceDirectory /home/diracai/Music/java Spring boot/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ library-management-system ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.0:run (default-cli) < test-compile @ library-management-system <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.0:run (default-cli) @ library-management-system ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-10-22T10:44:59.490+05:30  INFO 43538 --- [library-management-system] [  restartedMain] c.l.m.LibraryManagementApplication       : Starting LibraryManagementApplication using Java 17.0.16 with PID 43538 (/home/diracai/Music/java Spring boot/target/classes started by diracai in /home/diracai/Music/java Spring boot)
+2025-10-22T10:44:59.492+05:30 DEBUG 43538 --- [library-management-system] [  restartedMain] c.l.m.LibraryManagementApplication       : Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-10-22T10:44:59.493+05:30  INFO 43538 --- [library-management-system] [  restartedMain] c.l.m.LibraryManagementApplication       : The following 1 profile is active: "dev"
+2025-10-22T10:44:59.520+05:30  INFO 43538 --- [library-management-system] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T10:44:59.521+05:30  INFO 43538 --- [library-management-system] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T10:45:00.119+05:30  INFO 43538 --- [library-management-system] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-22T10:45:00.158+05:30  INFO 43538 --- [library-management-system] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2025-10-22T10:45:00.681+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-22T10:45:00.687+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T10:45:00.687+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-10-22T10:45:00.714+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-10-22T10:45:00.714+05:30  INFO 43538 --- [library-management-system] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1193 ms
+2025-10-22T10:45:00.855+05:30 DEBUG 43538 --- [library-management-system] [  restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-10-22T10:45:00.953+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-22T10:45:00.984+05:30  INFO 43538 --- [library-management-system] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-10-22T10:45:01.004+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-22T10:45:01.137+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-22T10:45:01.152+05:30  INFO 43538 --- [library-management-system] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-22T10:45:01.324+05:30  INFO 43538 --- [library-management-system] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2e6da56e
+2025-10-22T10:45:01.325+05:30  INFO 43538 --- [library-management-system] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-22T10:45:01.346+05:30  WARN 43538 --- [library-management-system] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-22T10:45:01.346+05:30  WARN 43538 --- [library-management-system] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-22T10:45:02.048+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-22T10:45:02.050+05:30  INFO 43538 --- [library-management-system] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-22T10:45:02.312+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-22T10:45:02.874+05:30  WARN 43538 --- [library-management-system] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-22T10:45:02.911+05:30  WARN 43538 --- [library-management-system] [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c1701f78-3884-4d9c-9d10-044fd3e75405
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-22T10:45:03.060+05:30 DEBUG 43538 --- [library-management-system] [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 26 mappings in 'requestMappingHandlerMapping'
+2025-10-22T10:45:03.157+05:30 DEBUG 43538 --- [library-management-system] [  restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-22T10:45:03.319+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2025-10-22T10:45:03.344+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64d5b093, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48d3718d, org.springframework.security.web.context.SecurityContextHolderFilter@176a116c, org.springframework.security.web.header.HeaderWriterFilter@6bc6091f, org.springframework.web.filter.CorsFilter@45f8a7c3, org.springframework.security.web.authentication.logout.LogoutFilter@616eadba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@381c11b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7503e1bc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65b7d5e, org.springframework.security.web.access.ExceptionTranslationFilter@680571ba, org.springframework.security.web.access.intercept.AuthorizationFilter@593cae14]
+2025-10-22T10:45:03.439+05:30 DEBUG 43538 --- [library-management-system] [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-22T10:45:03.468+05:30 DEBUG 43538 --- [library-management-system] [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-22T10:45:03.887+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T10:45:03.934+05:30  INFO 43538 --- [library-management-system] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v1'
+2025-10-22T10:45:03.945+05:30  INFO 43538 --- [library-management-system] [  restartedMain] c.l.m.LibraryManagementApplication       : Started LibraryManagementApplication in 4.711 seconds (process running for 4.95)
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║        🏛️  LIBRARY MANAGEMENT SYSTEM STARTED! 🏛️            ║
+║                                                              ║
+║  📚 API Documentation: http://localhost:8080/api/v1/swagger  ║
+║  🔍 H2 Console: http://localhost:8080/api/v1/h2-console     ║
+║  📊 Actuator: http://localhost:8080/api/v1/actuator         ║
+║                                                              ║
+║  🚀 Ready to manage your library! 🚀                        ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+2025-10-22T10:45:04.987+05:30  INFO 43538 --- [library-management-system] [nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T10:45:04.988+05:30  INFO 43538 --- [library-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T10:45:04.988+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-10-22T10:45:04.988+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-10-22T10:45:04.988+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-10-22T10:45:04.989+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@222d43d9
+2025-10-22T10:45:04.990+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3f8736cb
+2025-10-22T10:45:04.990+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-22T10:45:04.990+05:30  INFO 43538 --- [library-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-22T10:45:05.000+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2025-10-22T10:45:05.006+05:30  WARN 43538 --- [library-management-system] [nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/v1/actuator/health' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-10-22T10:45:05.013+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2025-10-22T10:45:05.014+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/actuator/health", parameters={}
+2025-10-22T10:45:05.025+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/octet-stream" to []
+2025-10-22T10:45:05.040+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-10-22T10:45:05.064+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [org.springframework.boot.actuate.health.SystemHealth@26f582e2]
+2025-10-22T10:45:05.081+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-22T10:45:05.083+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-10-22T10:50:50.280+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2025-10-22T10:50:50.281+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2025-10-22T10:50:50.281+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/actuator/health", parameters={}
+2025-10-22T10:50:50.282+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/octet-stream" to []
+2025-10-22T10:50:50.283+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-10-22T10:50:50.284+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [org.springframework.boot.actuate.health.SystemHealth@2d361fa3]
+2025-10-22T10:50:50.285+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-22T10:50:50.286+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-10-22T10:50:56.923+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /books
+2025-10-22T10:50:56.926+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /books
+2025-10-22T10:50:56.926+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/books", parameters={}
+2025-10-22T10:50:56.926+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.library.management.controller.BookController#createBook(BookDTO)
+2025-10-22T10:50:56.960+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [BookDTO(id=null, title=Spring Boot Mastery, author=John Developer, isbn=978-1-234-56789-0, publisher (truncated)...]
+2025-10-22T10:50:57.005+05:30  INFO 43538 --- [library-management-system] [nio-8080-exec-4] c.l.m.controller.BookController          : Creating new book: Spring Boot Mastery
+2025-10-22T10:50:57.009+05:30  INFO 43538 --- [library-management-system] [nio-8080-exec-4] c.l.m.service.impl.BookServiceImpl       : Creating new book with title: Spring Boot Mastery
+2025-10-22T10:50:57.061+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.copies_available,
+        b1_0.cover_image_url,
+        b1_0.created_at,
+        b1_0.deleted,
+        b1_0.description,
+        b1_0.isbn,
+        b1_0.language,
+        b1_0.pages,
+        b1_0.price,
+        b1_0.publication_date,
+        b1_0.publisher,
+        b1_0.status,
+        b1_0.title,
+        b1_0.total_copies,
+        b1_0.updated_at 
+    from
+        books b1_0 
+    where
+        b1_0.isbn=?
+Hibernate: 
+    /* <criteria> */ select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.copies_available,
+        b1_0.cover_image_url,
+        b1_0.created_at,
+        b1_0.deleted,
+        b1_0.description,
+        b1_0.isbn,
+        b1_0.language,
+        b1_0.pages,
+        b1_0.price,
+        b1_0.publication_date,
+        b1_0.publisher,
+        b1_0.status,
+        b1_0.title,
+        b1_0.total_copies,
+        b1_0.updated_at 
+    from
+        books b1_0 
+    where
+        b1_0.isbn=?
+2025-10-22T10:50:57.082+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.IllegalArgumentException: Book with ISBN 978-1-234-56789-0 already exists
+2025-10-22T10:50:57.082+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-10-22T10:50:57.083+05:30 ERROR 43538 --- [library-management-system] [nio-8080-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api/v1] threw exception [Request processing failed: java.lang.IllegalArgumentException: Book with ISBN 978-1-234-56789-0 already exists] with root cause
+
+java.lang.IllegalArgumentException: Book with ISBN 978-1-234-56789-0 already exists
+	at com.library.management.service.impl.BookServiceImpl.createBook(BookServiceImpl.java:53) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.1.jar:6.1.1]
+	at com.library.management.service.impl.BookServiceImpl$$SpringCGLIB$$0.createBook(<generated>) ~[classes/:na]
+	at com.library.management.controller.BookController.createBook(BookController.java:37) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-10-22T10:50:57.088+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /error
+2025-10-22T10:50:57.089+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /error
+2025-10-22T10:50:57.089+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/api/v1/error", parameters={}
+2025-10-22T10:50:57.090+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-22T10:50:57.092+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-22T10:50:57.092+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Oct 22 10:50:57 IST 2025, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
+2025-10-22T10:50:57.096+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2025-10-22T10:50:57.096+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-10-22T10:51:40.750+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /books
+2025-10-22T10:51:40.752+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /books
+2025-10-22T10:51:40.752+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/books", parameters={}
+2025-10-22T10:51:40.752+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.library.management.controller.BookController#createBook(BookDTO)
+2025-10-22T10:51:40.753+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [BookDTO(id=null, title=Spring Boot Mastery 2, author=John Developer, isbn=978-1-234-5634789-0, publi (truncated)...]
+2025-10-22T10:51:40.757+05:30  WARN 43538 --- [library-management-system] [nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.library.management.dto.BookDTO> com.library.management.controller.BookController.createBook(com.library.management.dto.BookDTO): [Field error in object 'bookDTO' on field 'isbn': rejected value [978-1-234-5634789-0]; codes [Pattern.bookDTO.isbn,Pattern.isbn,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.isbn,isbn]; arguments []; default message [isbn],[Ljakarta.validation.constraints.Pattern$Flag;@2c23f7bd,^(?:ISBN(?:-1[03])?:? )?(?=[0-9X]{10}$|(?=(?:[0-9]+[- ]){3})[- 0-9X]{13}$|97[89][0-9]{10}$|(?=(?:[0-9]+[- ]){4})[- 0-9]{17}$)(?:97[89][- ]?)?[0-9]{1,5}[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$]; default message [Invalid ISBN format]] ]
+2025-10-22T10:51:40.757+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-10-22T10:51:40.758+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-10-22T10:51:40.759+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /error
+2025-10-22T10:51:40.759+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /error
+2025-10-22T10:51:40.759+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/api/v1/error", parameters={}
+2025-10-22T10:51:40.760+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-22T10:51:40.761+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-22T10:51:40.761+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Oct 22 10:51:40 IST 2025, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+2025-10-22T10:51:40.768+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2025-10-22T10:51:40.769+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-10-22T10:53:52.055+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /books
+2025-10-22T10:53:52.056+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /books
+2025-10-22T10:53:52.057+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/books", parameters={}
+2025-10-22T10:53:52.057+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.library.management.controller.BookController#createBook(BookDTO)
+2025-10-22T10:53:52.058+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [BookDTO(id=null, title=Spring Boot Mastery 2, author=John Developer, isbn=978-0-321-14653-0, publish (truncated)...]
+2025-10-22T10:53:52.058+05:30  INFO 43538 --- [library-management-system] [nio-8080-exec-8] c.l.m.controller.BookController          : Creating new book: Spring Boot Mastery 2
+2025-10-22T10:53:52.059+05:30  INFO 43538 --- [library-management-system] [nio-8080-exec-8] c.l.m.service.impl.BookServiceImpl       : Creating new book with title: Spring Boot Mastery 2
+2025-10-22T10:53:52.060+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.copies_available,
+        b1_0.cover_image_url,
+        b1_0.created_at,
+        b1_0.deleted,
+        b1_0.description,
+        b1_0.isbn,
+        b1_0.language,
+        b1_0.pages,
+        b1_0.price,
+        b1_0.publication_date,
+        b1_0.publisher,
+        b1_0.status,
+        b1_0.title,
+        b1_0.total_copies,
+        b1_0.updated_at 
+    from
+        books b1_0 
+    where
+        b1_0.isbn=?
+Hibernate: 
+    /* <criteria> */ select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.copies_available,
+        b1_0.cover_image_url,
+        b1_0.created_at,
+        b1_0.deleted,
+        b1_0.description,
+        b1_0.isbn,
+        b1_0.language,
+        b1_0.pages,
+        b1_0.price,
+        b1_0.publication_date,
+        b1_0.publisher,
+        b1_0.status,
+        b1_0.title,
+        b1_0.total_copies,
+        b1_0.updated_at 
+    from
+        books b1_0 
+    where
+        b1_0.isbn=?
+2025-10-22T10:53:52.096+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-8] org.hibernate.SQL                        : 
+    /* insert for
+        com.library.management.model.Book */insert 
+    into
+        books (author, category, copies_available, cover_image_url, created_at, deleted, description, isbn, language, pages, price, publication_date, publisher, status, title, total_copies, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.library.management.model.Book */insert 
+    into
+        books (author, category, copies_available, cover_image_url, created_at, deleted, description, isbn, language, pages, price, publication_date, publisher, status, title, total_copies, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-10-22T10:53:52.103+05:30  INFO 43538 --- [library-management-system] [nio-8080-exec-8] c.l.m.service.impl.BookServiceImpl       : Successfully created book with ID: 3
+2025-10-22T10:53:52.115+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-22T10:53:52.116+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [BookDTO(id=3, title=Spring Boot Mastery 2, author=John Developer, isbn=978-0-321-14653-0, publisher= (truncated)...]
+2025-10-22T10:53:52.118+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-10-22T10:53:52.118+05:30 DEBUG 43538 --- [library-management-system] [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  35:29 min
+[INFO] Finished at: 2025-10-22T11:20:27+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.0:run (default-cli) on project library-management-system: Process terminated with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
